@@ -105,9 +105,9 @@
 
 #### Handling Unsupported Events Gracefully
 
-1. Use a `switch` statement in your event processing service to handle different event types.
-2. Include a `default` case in the `switch` statement for catching unsupported event types.
-3. Create a method, like `handleUnsupportedEvent`, to log and respond to unsupported events.
+1. The ability to use a `switch` statement in the event processing service to handle different event types, or just by using emitters/listeners approach.
+2. Emit an event `unsupported-event` for handling unsupported event types.
+3. Create an event listener method, like `handleUnsupportedEvent`, to log and respond to unsupported events.
 
 #### Adding New Events with Minimal Code Changes
 
